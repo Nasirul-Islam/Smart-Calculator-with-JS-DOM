@@ -16,48 +16,54 @@
                 <h1 class="text-5xl font-bold text-slate-800">Interactive</h1>
                 <h3 class="text-3xl text-gray-500">Geometry Genius</h3>
             </div>
-            <a class="text-xl text-white bg-blue-400 rounded px-6 py-2" href="#">Blog</a>
+            <a class="text-xl text-white bg-blue-400 rounded px-6 py-2" href="./blog.html">Blog</a>
         </nav>
     </header>
     <main>
         <section class="grid grid-cols-4 gap-4">
             <div class="col-span-3">
-                <div class="grid grid-cols-3 gap-4">
-                    <div class="border rounded-md border-gray-300 p-6 text-center">
+                <div id="cardParent" class="grid grid-cols-3 gap-4">
+                    <div class="cardItem border rounded-md border-gray-300 p-6 text-center">
                         <div class="h-48">
-                            <img class="w-full h-full"class="w-full" src="./images/triangle.png" alt="">
+                            <img class="w-full h-full" class="w-full" src="./images/triangle.png" alt="">
                         </div>
                         <div class="py-3">
                             <h4 class="text-2xl font-bold">Triangle</h4>
                             <p class="">Area (A) = 0.5 X b X h</p>
                         </div>
                         <div class="pb-3">
-                            <input class="w-2/4 px-2 my-2 rounded border border-gray-300" placeholder="b" type="text">
+                            <input id="i1Triangle" class="w-2/4 px-2 my-2 rounded border border-gray-300"
+                                placeholder="b" type="number">
                             <span>cm</span>
-                            <input class="w-2/4 px-2 my-2 rounded border border-gray-300" placeholder="h" type="text">
+                            <input id="i2Triangle" class="w-2/4 px-2 my-2 rounded border border-gray-300"
+                                placeholder="h" type="number">
                             <span>cm</span>
                         </div>
-                        <button class="w-5/6 text-xl text-white bg-blue-400 rounded px-6 py-2">Calculate</button>
+                        <button id="TriangleBtn"
+                            class="w-5/6 text-xl text-white bg-blue-400 rounded px-6 py-2">Calculate</button>
                     </div>
-                    <div class="border rounded-md border-gray-300 p-6 text-center">
+                    <div class="cardItem border rounded-md border-gray-300 p-6 text-center">
                         <div class="h-48">
-                            <img class="w-full h-full"class="w-full" src="./images/rectangle.png" alt="">
+                            <img class="w-full h-full" class="w-full" src="./images/rectangle.png" alt="">
                         </div>
                         <div class="py-3">
                             <h4 class="text-2xl font-bold">Rectangle</h4>
-                            <p class="">Area (A) = w X I</p>
+                            <p class="">Area (A) = w X l</p>
                         </div>
                         <div class="pb-3">
-                            <input class="w-2/4 px-2 my-2 rounded border border-gray-300" placeholder="w" type="text">
+                            <input id="i1Rectangle" class="w-2/4 px-2 my-2 rounded border border-gray-300"
+                                placeholder="w" type="text">
                             <span>cm</span>
-                            <input class="w-2/4 px-2 my-2 rounded border border-gray-300" placeholder="I" type="text">
+                            <input id="i2Rectangle" class="w-2/4 px-2 my-2 rounded border border-gray-300"
+                                placeholder="l" type="text">
                             <span>cm</span>
                         </div>
-                        <button class="w-5/6 text-xl text-white bg-blue-400 rounded px-6 py-2">Calculate</button>
+                        <button id="RectangleBtn"
+                            class="w-5/6 text-xl text-white bg-blue-400 rounded px-6 py-2">Calculate</button>
                     </div>
-                    <div class="border rounded-md border-gray-300 p-6 text-center">
+                    <div class="cardItem border rounded-md border-gray-300 p-6 text-center">
                         <div class="h-48">
-                            <img class="w-full h-full"class="w-full" src="./images/parallelogram.png" alt="">
+                            <img class="w-full h-full" class="w-full" src="./images/parallelogram.png" alt="">
                         </div>
                         <div class="py-3">
                             <h4 class="text-2xl font-bold">Parallelogram</h4>
@@ -71,9 +77,9 @@
                         </div>
                         <button class="w-5/6 text-xl text-white bg-blue-400 rounded px-6 py-2">Calculate</button>
                     </div>
-                    <div class="border rounded-md border-gray-300 p-6 text-center">
+                    <div class="cardItem border rounded-md border-gray-300 p-6 text-center">
                         <div class="h-48">
-                            <img class="w-full h-full"class="w-full" src="./images/rhombus.png" alt="">
+                            <img class="w-full h-full" class="w-full" src="./images/rhombus.png" alt="">
                         </div>
                         <div class="py-3">
                             <h4 class="text-2xl font-bold">Rhombus</h4>
@@ -87,9 +93,9 @@
                         </div>
                         <button class="w-5/6 text-xl text-white bg-blue-400 rounded px-6 py-2">Calculate</button>
                     </div>
-                    <div class="border rounded-md border-gray-300 p-6 text-center">
+                    <div class="cardItem border rounded-md border-gray-300 p-6 text-center">
                         <div class="h-48">
-                            <img class="w-full h-full"class="w-full" src="./images/pentagon.png" alt="">
+                            <img class="w-full h-full" class="w-full" src="./images/pentagon.png" alt="">
                         </div>
                         <div class="py-3">
                             <h4 class="text-2xl font-bold">Pentagon</h4>
@@ -103,9 +109,9 @@
                         </div>
                         <button class="w-5/6 text-xl text-white bg-blue-400 rounded px-6 py-2">Calculate</button>
                     </div>
-                    <div class="border rounded-md border-gray-300 p-6 text-center">
+                    <div class="cardItem border rounded-md border-gray-300 p-6 text-center">
                         <div class="h-48">
-                            <img class="w-full h-full"class="w-full" src="./images/ellipse.png" alt="">
+                            <img class="w-full h-full" class="w-full" src="./images/ellipse.png" alt="">
                         </div>
                         <div class="py-3">
                             <h4 class="text-2xl font-bold">Ellipse</h4>
@@ -121,8 +127,10 @@
                     </div>
                 </div>
             </div>
-            <div class="AreaCalculation border border-gray-300 rounded-md text-center">
-                <p class="text-base font-bold underline underline-offset-4">Area Calculation</p>
+            <div id="AreaCalculation" class="border border-gray-300 p-4 rounded-md">
+                <p id="AreaCalculationText"
+                    class="areaColor text-base text-center font-bold underline underline-offset-4 mb-4">Area
+                    Calculation</p>
             </div>
         </section>
     </main>
