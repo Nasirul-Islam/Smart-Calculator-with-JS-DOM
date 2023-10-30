@@ -1,12 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Smart Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body class="w-11/12 mx-auto">
+    <header>
+        <nav class="bg-teal-100 rounded-md my-6 py-4 px-6 flex items-center justify-between">
+            <div class="">
+                <h1 class="text-5xl font-bold text-slate-800">Interactive</h1>
+                <h3 class="text-3xl text-gray-500">Geometry Genius</h3>
+            </div>
+            <a class="text-xl text-white bg-blue-400 rounded px-6 py-2" href="#">Blog</a>
+        </nav>
+    </header>
+    <main>
+        <section class="grid grid-cols-4 gap-4">
+            <div class="col-span-3">
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="border rounded-md border-gray-300 p-6 text-center">
+                        <div class="h-48">
+                            <img class="w-full h-full"class="w-full" src="./images/triangle.png" alt="">
+                        </div>
+                        <div class="py-3">
+                            <h4 class="text-2xl font-bold">Triangle</h4>
+                            <p class="">Area (A) = 0.5 X b X h</p>
+                        </div>
+                        <div class="pb-3">
+                            <input class="w-2/4 px-2 my-2 rounded border border-gray-300" placeholder="b" type="text">
+                            <span>cm</span>
+                            <input class="w-2/4 px-2 my-2 rounded border border-gray-300" placeholder="h" type="text">
+                            <span>cm</span>
+                        </div>
+                        <button class="w-5/6 text-xl text-white bg-blue-400 rounded px-6 py-2">Calculate</button>
+                    </div>
+                    <div class="border rounded-md border-gray-300 p-6 text-center">
+                        <div class="h-48">
+                            <img class="w-full h-full"class="w-full" src="./images/rectangle.png" alt="">
+                        </div>
+                        <div class="py-3">
+                            <h4 class="text-2xl font-bold">Rectangle</h4>
+                            <p class="">Area (A) = w X I</p>
+                        </div>
+                        <div class="pb-3">
+                            <input class="w-2/4 px-2 my-2 rounded border border-gray-300" placeholder="w" type="text">
+                            <span>cm</span>
+                            <input class="w-2/4 px-2 my-2 rounded border border-gray-300" placeholder="I" type="text">
+                            <span>cm</span>
+                        </div>
+                        <button class="w-5/6 text-xl text-white bg-blue-400 rounded px-6 py-2">Calculate</button>
+                    </div>
+                    <div class="border rounded-md border-gray-300 p-6 text-center">
+                        <div class="h-48">
+                            <img class="w-full h-full"class="w-full" src="./images/parallelogram.png" alt="">
+                        </div>
+                        <div class="py-3">
+                            <h4 class="text-2xl font-bold">Parallelogram</h4>
+                            <p class="">Area (A) = b X h</p>
+                        </div>
+                        <div class="pb-3">
+                            <input class="w-2/4 px-2 my-2 rounded border border-gray-300" placeholder="b" type="text">
+                            <span>cm</span>
+                            <input class="w-2/4 px-2 my-2 rounded border border-gray-300" placeholder="h" type="text">
+                            <span>cm</span>
+                        </div>
+                        <button class="w-5/6 text-xl text-white bg-blue-400 rounded px-6 py-2">Calculate</button>
+                    </div>
+                    <div class="border rounded-md border-gray-300 p-6 text-center">
+                        <div class="h-48">
+                            <img class="w-full h-full"class="w-full" src="./images/rhombus.png" alt="">
+                        </div>
+                        <div class="py-3">
+                            <h4 class="text-2xl font-bold">Rhombus</h4>
+                            <p class="">Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
+                        </div>
+                        <div class="pb-3">
+                            <input class="w-2/4 px-2 my-2 rounded border border-gray-300" placeholder="d1" type="text">
+                            <span>cm</span>
+                            <input class="w-2/4 px-2 my-2 rounded border border-gray-300" placeholder="d2" type="text">
+                            <span>cm</span>
+                        </div>
+                        <button class="w-5/6 text-xl text-white bg-blue-400 rounded px-6 py-2">Calculate</button>
+                    </div>
+                    <div class="border rounded-md border-gray-300 p-6 text-center">
+                        <div class="h-48">
+                            <img class="w-full h-full"class="w-full" src="./images/pentagon.png" alt="">
+                        </div>
+                        <div class="py-3">
+                            <h4 class="text-2xl font-bold">Pentagon</h4>
+                            <p class="">Area (A) = 0.5 X p X b</p>
+                        </div>
+                        <div class="pb-3">
+                            <input class="w-2/4 px-2 my-2 rounded border border-gray-300" placeholder="p" type="text">
+                            <span>cm</span>
+                            <input class="w-2/4 px-2 my-2 rounded border border-gray-300" placeholder="b" type="text">
+                            <span>cm</span>
+                        </div>
+                        <button class="w-5/6 text-xl text-white bg-blue-400 rounded px-6 py-2">Calculate</button>
+                    </div>
+                    <div class="border rounded-md border-gray-300 p-6 text-center">
+                        <div class="h-48">
+                            <img class="w-full h-full"class="w-full" src="./images/ellipse.png" alt="">
+                        </div>
+                        <div class="py-3">
+                            <h4 class="text-2xl font-bold">Ellipse</h4>
+                            <p class="">Area (A) = ℼab</p>
+                        </div>
+                        <div class="pb-3">
+                            <input class="w-2/4 px-2 my-2 rounded border border-gray-300" placeholder="a" type="text">
+                            <span>cm</span>
+                            <input class="w-2/4 px-2 my-2 rounded border border-gray-300" placeholder="b" type="text">
+                            <span>cm</span>
+                        </div>
+                        <button class="w-5/6 text-xl text-white bg-blue-400 rounded px-6 py-2">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            <div class="AreaCalculation border border-gray-300 rounded-md text-center">
+                <p class="text-base font-bold underline underline-offset-4">Area Calculation</p>
+            </div>
+        </section>
+    </main>
     <script src="script.js"></script>
 </body>
+
 </html>
