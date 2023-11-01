@@ -22,7 +22,7 @@
     <main>
         <section class="grid grid-cols-4 gap-4">
             <div class="col-span-3">
-                <div id="cardParent" class="grid grid-cols-3 gap-4">
+                <div id="cardParent" class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
                     <div class="cardItem border rounded-md border-gray-300 p-6 text-center">
                         <div class="h-48">
                             <img class="w-full h-full" class="w-full" src="./images/triangle.png" alt="">
@@ -70,12 +70,12 @@
                             <p class="">Area (A) = b X h</p>
                         </div>
                         <div class="pb-3">
-                            <input class="w-2/4 px-2 my-2 rounded border border-gray-300" placeholder="b" type="text">
+                            <input id="i1Parallelogram" class="w-2/4 px-2 my-2 rounded border border-gray-300" placeholder="b" type="text">
                             <span>cm</span>
-                            <input class="w-2/4 px-2 my-2 rounded border border-gray-300" placeholder="h" type="text">
+                            <input id="i2Parallelogram" class="w-2/4 px-2 my-2 rounded border border-gray-300" placeholder="h" type="text">
                             <span>cm</span>
                         </div>
-                        <button class="w-5/6 text-xl text-white bg-blue-400 rounded px-6 py-2">Calculate</button>
+                        <button id="ParallelogramBtn" class="w-5/6 text-xl text-white bg-blue-400 rounded px-6 py-2">Calculate</button>
                     </div>
                     <div class="cardItem border rounded-md border-gray-300 p-6 text-center">
                         <div class="h-48">
@@ -86,12 +86,12 @@
                             <p class="">Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
                         </div>
                         <div class="pb-3">
-                            <input class="w-2/4 px-2 my-2 rounded border border-gray-300" placeholder="d1" type="text">
+                            <input id="i1Rhombus" class="w-2/4 px-2 my-2 rounded border border-gray-300" placeholder="d1" type="text">
                             <span>cm</span>
-                            <input class="w-2/4 px-2 my-2 rounded border border-gray-300" placeholder="d2" type="text">
+                            <input id="i2Rhombus" class="w-2/4 px-2 my-2 rounded border border-gray-300" placeholder="d2" type="text">
                             <span>cm</span>
                         </div>
-                        <button class="w-5/6 text-xl text-white bg-blue-400 rounded px-6 py-2">Calculate</button>
+                        <button id="RhombusBtn" class="w-5/6 text-xl text-white bg-blue-400 rounded px-6 py-2">Calculate</button>
                     </div>
                     <div class="cardItem border rounded-md border-gray-300 p-6 text-center">
                         <div class="h-48">
@@ -102,12 +102,12 @@
                             <p class="">Area (A) = 0.5 X p X b</p>
                         </div>
                         <div class="pb-3">
-                            <input class="w-2/4 px-2 my-2 rounded border border-gray-300" placeholder="p" type="text">
+                            <input id="i1Pentagon" class="w-2/4 px-2 my-2 rounded border border-gray-300" placeholder="p" type="text">
                             <span>cm</span>
-                            <input class="w-2/4 px-2 my-2 rounded border border-gray-300" placeholder="b" type="text">
+                            <input id="i2Pentagon" class="w-2/4 px-2 my-2 rounded border border-gray-300" placeholder="b" type="text">
                             <span>cm</span>
                         </div>
-                        <button class="w-5/6 text-xl text-white bg-blue-400 rounded px-6 py-2">Calculate</button>
+                        <button id="PentagonBtn" class="w-5/6 text-xl text-white bg-blue-400 rounded px-6 py-2">Calculate</button>
                     </div>
                     <div class="cardItem border rounded-md border-gray-300 p-6 text-center">
                         <div class="h-48">
@@ -118,12 +118,12 @@
                             <p class="">Area (A) = ℼab</p>
                         </div>
                         <div class="pb-3">
-                            <input class="w-2/4 px-2 my-2 rounded border border-gray-300" placeholder="a" type="text">
+                            <input id="i1Ellipse" class="w-2/4 px-2 my-2 rounded border border-gray-300" placeholder="a" type="text">
                             <span>cm</span>
-                            <input class="w-2/4 px-2 my-2 rounded border border-gray-300" placeholder="b" type="text">
+                            <input id="i2Ellipse" class="w-2/4 px-2 my-2 rounded border border-gray-300" placeholder="b" type="text">
                             <span>cm</span>
                         </div>
-                        <button class="w-5/6 text-xl text-white bg-blue-400 rounded px-6 py-2">Calculate</button>
+                        <button id="EllipseBtn" class="w-5/6 text-xl text-white bg-blue-400 rounded px-6 py-2">Calculate</button>
                     </div>
                 </div>
             </div>
